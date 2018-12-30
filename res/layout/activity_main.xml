@@ -1,0 +1,140 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundBlue" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="101dp"
+        android:text="@string/welcome"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        tools:context=".MainActivity" />
+
+    <Button
+        android:id="@+id/upload_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:text="@string/upload"
+        android:textColor="@color/whiteText" />
+
+    <Button
+        android:id="@+id/capture_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/upload_button"
+        android:layout_alignBottom="@+id/upload_button"
+        android:layout_marginLeft="28dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/capture" />
+
+    <Button
+        android:id="@+id/modify_button_sequential"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="126dp"
+        android:text="@string/modifySequential" />
+
+    <Button
+        android:id="@+id/select_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/modify_button_sequential"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="29dp"
+        android:text="@string/select" />
+
+    <TextView
+        android:id="@+id/targeturi"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@+id/select_button"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:textSize="25dp"
+        android:typeface="normal" />
+
+    <TextView
+        android:id="@+id/pixels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/upload_button"
+        android:layout_alignTop="@+id/select_button"
+        android:layout_marginRight="166dp"
+        android:text="Number of Pixels: "
+        android:textColor="@color/whiteText" />
+
+    <TextView
+        android:id="@+id/lsbs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/select_button"
+        android:layout_alignLeft="@+id/pixels"
+        android:text="Number of Least Significant Bits: "
+        android:textColor="@color/whiteText" />
+
+    <TextView
+        android:id="@+id/characters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lsbs"
+        android:layout_alignTop="@id/modify_button_sequential"
+        android:text="Max number of ASCII characters: "
+        android:textColor="@color/whiteText" />
+
+    <Button
+        android:id="@+id/enter_msg"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/modify_button_sequential"
+        android:layout_alignBottom="@+id/modify_button_sequential"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_marginLeft="53dp"
+        android:text="Enter Message" />
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/modify_button_sequential"
+        android:layout_below="@+id/enter_msg"
+        android:layout_marginTop="64dp"
+        android:text="@string/save" />
+
+    <Button
+        android:id="@+id/decode_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload_button"
+        android:layout_alignLeft="@+id/save_button"
+        android:layout_marginBottom="67dp"
+        android:text="@string/decode" />
+
+    <Button
+        android:id="@+id/modify_button_random"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/modify_button_sequential"
+        android:layout_alignBottom="@+id/modify_button_sequential"
+        android:layout_toLeftOf="@+id/modify_button_sequential"
+        android:text="@string/modifyRandom" />
+
+    <Button
+        android:id="@+id/modify_button_letter_frequency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/save_button"
+        android:layout_toRightOf="@+id/modify_button_sequential"
+        android:text="@string/modifyLetterFrequency" />
+
+</RelativeLayout>

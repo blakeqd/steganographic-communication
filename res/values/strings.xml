@@ -1,0 +1,19 @@
+<resources>
+
+    <string name="app_name">Stego Communication</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main"></string>
+    <string name="welcome">Welcome to Steganographic Communication!</string>
+    
+    <string name="capture">Capture Photo</string>
+    <string name="modifySequential"><i>Sequential</i></string>
+    <string name="modifyRandom"><i>Random Sections</i></string>
+    <string name="modifyLetterFrequency"><i>Letter Frequency Sections</i></string>
+    <string name="select">Select Image</string>
+	<string name="save">Save Modified Image</string>
+	<string name="upload">Upload Image</string>
+	<string name="decode">Decode Image</string>
+	
+	
+</resources>
